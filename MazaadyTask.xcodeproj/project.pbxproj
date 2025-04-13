@@ -6,6 +6,15 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		702C6C902DAABBF000CDF239 /* PromiseKit in Frameworks */ = {isa = PBXBuildFile; productRef = 702C6C8F2DAABBF000CDF239 /* PromiseKit */; };
+		708085B52DAACD6600AA3EE1 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 708085B42DAACD6600AA3EE1 /* Moya */; };
+		708085B82DAAD2AD00AA3EE1 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 708085B72DAAD2AD00AA3EE1 /* SDWebImage */; };
+		708085BA2DAAD2AD00AA3EE1 /* SDWebImageMapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 708085B92DAAD2AD00AA3EE1 /* SDWebImageMapKit */; };
+		70FDBC4D2DAAC860001F938F /* NVActivityIndicatorView in Frameworks */ = {isa = PBXBuildFile; productRef = 70FDBC4C2DAAC860001F938F /* NVActivityIndicatorView */; };
+		70FDBC4F2DAAC860001F938F /* NVActivityIndicatorViewExtended in Frameworks */ = {isa = PBXBuildFile; productRef = 70FDBC4E2DAAC860001F938F /* NVActivityIndicatorViewExtended */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		702C6B6F2DA80F5700CDF239 /* MazaadyTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MazaadyTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -14,7 +23,7 @@
 		702C6B812DA80F5900CDF239 /* Exceptions for "MazaadyTask" folder in "MazaadyTask" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
-				Info.plist,
+				Configrations/Info.plist,
 			);
 			target = 702C6B6E2DA80F5700CDF239 /* MazaadyTask */;
 		};
@@ -36,6 +45,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70FDBC4F2DAAC860001F938F /* NVActivityIndicatorViewExtended in Frameworks */,
+				70FDBC4D2DAAC860001F938F /* NVActivityIndicatorView in Frameworks */,
+				708085B52DAACD6600AA3EE1 /* Moya in Frameworks */,
+				702C6C902DAABBF000CDF239 /* PromiseKit in Frameworks */,
+				708085BA2DAAD2AD00AA3EE1 /* SDWebImageMapKit in Frameworks */,
+				708085B82DAAD2AD00AA3EE1 /* SDWebImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,6 +61,7 @@
 			isa = PBXGroup;
 			children = (
 				702C6B712DA80F5700CDF239 /* MazaadyTask */,
+				708085B32DAACD6600AA3EE1 /* Frameworks */,
 				702C6B702DA80F5700CDF239 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -56,6 +72,13 @@
 				702C6B6F2DA80F5700CDF239 /* MazaadyTask.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		708085B32DAACD6600AA3EE1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -78,6 +101,12 @@
 			);
 			name = MazaadyTask;
 			packageProductDependencies = (
+				702C6C8F2DAABBF000CDF239 /* PromiseKit */,
+				70FDBC4C2DAAC860001F938F /* NVActivityIndicatorView */,
+				70FDBC4E2DAAC860001F938F /* NVActivityIndicatorViewExtended */,
+				708085B42DAACD6600AA3EE1 /* Moya */,
+				708085B72DAAD2AD00AA3EE1 /* SDWebImage */,
+				708085B92DAAD2AD00AA3EE1 /* SDWebImageMapKit */,
 			);
 			productName = MazaadyTask;
 			productReference = 702C6B6F2DA80F5700CDF239 /* MazaadyTask.app */;
@@ -107,6 +136,12 @@
 			);
 			mainGroup = 702C6B662DA80F5700CDF239;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				702C6C1B2DAAB5D700CDF239 /* XCRemoteSwiftPackageReference "Moya" */,
+				702C6C8E2DAABBF000CDF239 /* XCRemoteSwiftPackageReference "PromiseKit" */,
+				70FDBC4B2DAAC860001F938F /* XCRemoteSwiftPackageReference "NVActivityIndicatorView" */,
+				708085B62DAAD2AD00AA3EE1 /* XCRemoteSwiftPackageReference "SDWebImage" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 702C6B702DA80F5700CDF239 /* Products */;
 			projectDirPath = "";
@@ -147,12 +182,13 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4ND45VU725;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = MazaadyTask/Info.plist;
+				INFOPLIST_FILE = MazaadyTask/Configrations/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -175,12 +211,13 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4ND45VU725;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = MazaadyTask/Info.plist;
+				INFOPLIST_FILE = MazaadyTask/Configrations/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -335,6 +372,74 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		702C6C1B2DAAB5D700CDF239 /* XCRemoteSwiftPackageReference "Moya" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Moya/Moya.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 15.0.3;
+			};
+		};
+		702C6C8E2DAABBF000CDF239 /* XCRemoteSwiftPackageReference "PromiseKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mxcl/PromiseKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.2.0;
+			};
+		};
+		708085B62DAAD2AD00AA3EE1 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.21.0;
+			};
+		};
+		70FDBC4B2DAAC860001F938F /* XCRemoteSwiftPackageReference "NVActivityIndicatorView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ninjaprox/NVActivityIndicatorView.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		702C6C8F2DAABBF000CDF239 /* PromiseKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 702C6C8E2DAABBF000CDF239 /* XCRemoteSwiftPackageReference "PromiseKit" */;
+			productName = PromiseKit;
+		};
+		708085B42DAACD6600AA3EE1 /* Moya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 702C6C1B2DAAB5D700CDF239 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = Moya;
+		};
+		708085B72DAAD2AD00AA3EE1 /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 708085B62DAAD2AD00AA3EE1 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+		708085B92DAAD2AD00AA3EE1 /* SDWebImageMapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 708085B62DAAD2AD00AA3EE1 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImageMapKit;
+		};
+		70FDBC4C2DAAC860001F938F /* NVActivityIndicatorView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 70FDBC4B2DAAC860001F938F /* XCRemoteSwiftPackageReference "NVActivityIndicatorView" */;
+			productName = NVActivityIndicatorView;
+		};
+		70FDBC4E2DAAC860001F938F /* NVActivityIndicatorViewExtended */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 70FDBC4B2DAAC860001F938F /* XCRemoteSwiftPackageReference "NVActivityIndicatorView" */;
+			productName = NVActivityIndicatorViewExtended;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 702C6B672DA80F5700CDF239 /* Project object */;
 }
